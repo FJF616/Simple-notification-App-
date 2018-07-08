@@ -31,15 +31,15 @@ export class SharedSnackProvider extends Component {
 
         return(
             <SharedSnackbarContext.Provider
-                value={{
-                    openSnackbar: this.openSnackbar,
-                    closeSnackbar: this.closeSnackbar,
-                    snackbarIsOpen: this.state.isOpen,
-                    message: this.state.message,
-                }}
+              value={{
+                openSnackbar: this.openSnackbar,
+                closeSnackbar: this.closeSnackbar,
+                snackbarIsOpen: this.state.isOpen,
+                message: this.state.message,
+              }}
             >          
-            {/* TODO: Render Snackbar presentation component here */}
-            {children}
+              <SharedSnackbar/>
+              {children}
             </SharedSnackbarContext.Provider>
         );
     }
