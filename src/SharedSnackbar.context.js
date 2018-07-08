@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
+import SharedSnackbar from './SharedSnackbar.component'
 
 const SharedSnackbarContext = React.createContext();
-
-export class SharedSnackProvider extends Component {
+export class SharedSnackbarProvider extends Component {
     constructor(props) {
         super(props);
 

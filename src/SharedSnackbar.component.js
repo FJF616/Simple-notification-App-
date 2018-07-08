@@ -1,10 +1,13 @@
+
+import { IconButton, Snackbar } from '@material-ui/core';
+import { Close } from '@material-ui/icons';
 import React from 'react';
 import { SharedSnackbarConsumer } from './SharedSnackbar.context';
 
 const SharedSnackbar = () => (
     <SharedSnackbarConsumer>
     {({ snackbarIsOpen, message, closeSnackbar }) => (
-        <snackbar
+        <Snackbar
             anchorOrigin={{
                 vertical: 'bottom',
                 horizontal: 'left',
